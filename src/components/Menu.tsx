@@ -14,38 +14,44 @@ export function Menu() {
   }
 
   return (
-    <nav className="fixed w-full bg-gray-800">
+    <nav className="fixed w-full bg-white">
       <div className="mx-4 sm:mx-6 lg:mx-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center justify-start">
             <div className="flex-shrink-0">
-              <a href="#" className="flex items-center text-lg font-bold">
+              <a href="/" className="flex items-center text-lg font-bold">
                 <Image src={logo} className="h-10" alt="Logo" />
               </a>
             </div>
           </div>
+          <div className="flex items-center justify-center">
+            <p>Gabriel Cordova Medeiros</p>
+          </div>
           <div className="ml-auto hidden items-center justify-end md:flex">
-            <div className="flex">
-              <p className="ml-4 mt-2 font-title">Gabriel Cordova Medeiros</p>
-            </div>
             <div className="flex items-baseline space-x-4">
               <a
                 href="/about"
-                className="rounded-md px-3 py-2 hover:text-gray-300"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
               >
-                about
+                sobre mim
               </a>
               <a
-                href="/portfolio"
-                className="rounded-md px-3 py-2 hover:text-gray-300"
+                href="/certificados"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
               >
-                portfolio
+                certificados
+              </a>
+              <a
+                href="/projetos"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
+              >
+                projetos
               </a>
               <a
                 href="/contact"
-                className="rounded-md px-3 py-2 hover:text-gray-300"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
               >
-                contact
+                contato
               </a>
             </div>
             <div className="ml-10 flex items-center">
@@ -53,7 +59,7 @@ export function Menu() {
                 href="https://www.linkedin.com/in/gabiceemi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 hover:text-gray-300"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
               >
                 <Linkedin size={24} />
               </a>
@@ -61,7 +67,7 @@ export function Menu() {
                 href="https://twitter.com/gabiceemi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 hover:text-gray-300"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
               >
                 <Twitter size={24} />
               </a>
@@ -69,7 +75,7 @@ export function Menu() {
                 href="https://instagram.com/gabiceemi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 hover:text-gray-300"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
               >
                 <Instagram size={24} />
               </a>
@@ -77,7 +83,7 @@ export function Menu() {
                 href="https://github.com/gabiceemi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 hover:text-gray-300"
+                className="hover:text-bold rounded-md px-3 py-2 hover:text-blue-200"
               >
                 <Github size={24} />
               </a>
@@ -87,7 +93,7 @@ export function Menu() {
             <button
               onClick={toggleMenu}
               type="button"
-              className="hover:text-gray-300 focus:text-gray-300 focus:outline-none"
+              className="hover:text-bold hover:text-bold hover:text-blue-200 focus:text-gray-700 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -112,35 +118,35 @@ export function Menu() {
       >
         <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
           <a
-            href="#"
-            className="block rounded-md px-3 py-2 hover:text-gray-300"
+            href="/about"
+            className="hover:text-bold block rounded-md px-3 py-2 text-center hover:text-blue-200"
           >
-            Home
+            sobre mim
           </a>
           <a
-            href="#"
-            className="block rounded-md px-3 py-2 hover:text-gray-300"
+            href="/certificados"
+            className="hover:text-bold block rounded-md px-3 py-2 text-center hover:text-blue-200"
           >
-            Portfolio
+            certificados
           </a>
           <a
-            href="#"
-            className="block rounded-md px-3 py-2 hover:text-gray-300"
+            href="/"
+            className="hover:text-bold block rounded-md px-3 py-2 text-center hover:text-blue-200"
           >
-            About
+            projetos
           </a>
           <a
-            href="#"
-            className="block rounded-md px-3 py-2 hover:text-gray-300"
+            href="/contact"
+            className="hover:text-bold block rounded-md px-3 py-2 text-center hover:text-blue-200"
           >
-            Contact
+            contato
           </a>
           <div className="grid grid-cols-4">
             <a
               href="https://www.linkedin.com/in/gabiceemi/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md px-3 py-2 hover:text-gray-300"
+              className="hover:text-bold flex items-center justify-center rounded-md px-3 py-2 hover:text-blue-200"
             >
               <Linkedin size={24} />
             </a>
@@ -148,7 +154,7 @@ export function Menu() {
               href="https://twitter.com/gabiceemi"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md px-3 py-2 hover:text-gray-300"
+              className="hover:text-bold flex items-center justify-center rounded-md px-3 py-2 hover:text-blue-200"
             >
               <Twitter size={24} />
             </a>
@@ -156,7 +162,7 @@ export function Menu() {
               href="https://instagram.com/gabiceemi"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md px-3 py-2 hover:text-gray-300"
+              className="hover:text-bold flex items-center justify-center rounded-md px-3 py-2 hover:text-blue-200"
             >
               <Instagram size={24} />
             </a>
@@ -164,7 +170,7 @@ export function Menu() {
               href="https://github.com/gabiceemi"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md px-3 py-2 hover:text-gray-300"
+              className="hover:text-bold flex items-center justify-center rounded-md px-3 py-2 hover:text-blue-200"
             >
               <Github size={24} />
             </a>

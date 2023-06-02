@@ -5,6 +5,7 @@ import {
   Bai_Jamjuree as BaiJamjuree,
   Fira_Code as FiraCode,
 } from 'next/font/google'
+import { Menu } from '@/components/Menu'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 
@@ -30,9 +31,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} ${firaCode.variable} bg-white font-sans text-white`}
+        className={`${roboto.variable} ${baiJamjuree.variable} ${firaCode.variable} bg-white font-title text-gray-700`}
       >
         <main className="min-h-screen">
+          <Menu />
           <div className="flex">{children}</div>
         </main>
       </body>
