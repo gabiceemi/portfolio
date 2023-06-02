@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Card from '@/components/Card'
 
 import quote from '../../assets/quote.png'
+import Copyright from '@/components/Copyright'
 
 export default function Certificacoes() {
   return (
@@ -65,6 +66,7 @@ export default function Certificacoes() {
           description="Utilizando as tecnologias Node.js, React JS e React Native, foi desenvolvido o Ecoleta, um marketplace de coleta de resíduos."
         />
       </div>
+      <Copyright />
     </div>
   )
 }

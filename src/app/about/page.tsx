@@ -7,6 +7,7 @@ import { Basico } from '@/components/Basico'
 import { Intermediario } from '@/components/Intermediario'
 import { Avancado } from '@/components/Avancado'
 import CardExp from '@/components/CardExp'
+import Copyright from '@/components/Copyright'
 
 export default function About() {
   return (
@@ -87,6 +88,7 @@ export default function About() {
         <Especialista hardSkill="Jaspersoft" />
         <Especialista hardSkill="TypeScript" />
       </div>
+      <Copyright />
     </div>
   )
 }

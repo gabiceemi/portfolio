@@ -130,7 +130,7 @@ export function Menu() {
             certificados
           </a>
           <a
-            href="/"
+            href="/projetos"
             className="hover:text-bold block rounded-md px-3 py-2 text-center hover:text-blue-200"
           >
             projetos
