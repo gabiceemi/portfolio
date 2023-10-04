@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import me from '../../assets/me.jpg'
+import me from '../../assets/me.jpg';
 
 import { Especialista } from '@/components/Especialista'
 import { Basico } from '@/components/Basico'
@@ -37,6 +37,17 @@ export default function About() {
         </h1>
       </div>
       <div className="grid w-screen grid-cols-1 overflow-hidden px-10 py-5 md:grid-cols-3 md:px-52">
+        <CardExp
+          title="Desenvolvedor FullStack  ( ) {"
+          description={
+            'Setembro de 2023 - Até o momento\n\n' +
+            'Desenvolver recursos front-end responsivos para melhorar a experiência do usuário em um site de comércio eletrônico.\n\n' +
+            'Suporte técnico ágil para resolver problemas e melhorar a satisfação do cliente.\n\n' +
+            'Gerenciar o back-end do site, incluindo bancos de dados, servidores e APIs para garantir a funcionalidade e a escalabilidade.\n\n' +
+            'Realizar testes rigorosos e depuração para garantir a estabilidade e a segurança do site.\n\n' +
+            'Tecnologias: Adonis, Angular, Laravel, PostgreSql, MongoDB, MySQL, Next.js, PHP, Node.js, React.js, Redis, TypeScript, JavaScript, Vue.js.\n\n'
+          }
+        />
         <CardExp
           title="Desenvolvedor FullStack  ( ) {"
           description={
@@ -98,6 +109,7 @@ export default function About() {
         </h1>
       </div>
       <div className="grid w-screen grid-cols-2 overflow-hidden px-10 py-5 md:grid-cols-4 md:px-52">
+        <Basico hardSkill="Adonis" />
         <Basico hardSkill="Angular" />
         <Especialista hardSkill="Bizagi" />
         <Intermediario hardSkill="C#" />
@@ -115,7 +127,8 @@ export default function About() {
         <Especialista hardSkill="Insomnia" />
         <Especialista hardSkill="Java" />
         <Especialista hardSkill="JavaScript" />
-        <Avancado hardSkill="Jtest" />
+        <Avancado hardSkill="Jest" />
+        <Avancado hardSkill="Laravel" />
         <Especialista hardSkill="MySQL" />
         <Avancado hardSkill="MongoDB" />
         <Avancado hardSkill="Next.js" />
@@ -125,6 +138,7 @@ export default function About() {
         <Avancado hardSkill="Selenium" />
         <Especialista hardSkill="Jaspersoft" />
         <Especialista hardSkill="TypeScript" />
+        <Avancado hardSkill="Vue.js" />
       </div>
       <Copyright />
     </div>
