@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import me from '../../assets/me.jpg';
+import me from '../../assets/me.jpg'
 
 import { Especialista } from '@/components/Especialista'
 import { Basico } from '@/components/Basico'
